@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DataSourceManagerImpl" format="xml" multifile-model="true">
+    <data-source source="LOCAL" name="godengdb@192.168.56.107" uuid="2f4b91c9-fcdd-4d29-ab6f-252a97fa6ae2">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://192.168.56.107:5432/godengdb</jdbc-url>
+    </data-source>
+  </component>
+</project>

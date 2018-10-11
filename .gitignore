@@ -50,3 +50,6 @@
 # vagrant box
 godeng.box
 godeng_1.box
+
+# logs
+/var/log/dev.log
