@@ -46,3 +46,7 @@
 
 # Embedded web-server pid file
 /.web-server-pid
+
+# vagrant box
+godeng.box
+godeng_1.box
