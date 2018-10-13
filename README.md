@@ -18,6 +18,9 @@
 1. vagrant plugin install vagrant-hostmanager
 2. vagrant up
 3. composer install
+4. vagrant ssh
+5. cd /vagrant
+6. php bin/console d:m:m
 4. В браузере открываем: http://dev.godeng/
 
 #  Завершаем работу:
