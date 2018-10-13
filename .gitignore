@@ -50,6 +50,7 @@
 # vagrant box
 godeng.box
 godeng_1.box
+godeng_2.box
 .vagrant/
 
 # logs
