@@ -53,4 +53,4 @@ godeng_1.box
 .vagrant/
 
 # logs
-var/log/
+var/log/*.log
