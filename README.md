@@ -25,3 +25,9 @@
 
 #  Завершаем работу:
 1. vagrant halt
+
+#Фикс команды php bin/console d:m:diff
+
+1. PostgreSqlSchemaManager.php:309
+2. Заменяем тело функции:
+https://stackoverflow.com/questions/47397435/how-to-correctly-use-doctrine-migrations-with-postressql
