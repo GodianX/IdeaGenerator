@@ -22,7 +22,11 @@ https://yarnpkg.com/lang/en/docs/install/#windows-stable
 1. vagrant plugin install vagrant-hostmanager
 2. vagrant up
 3. composer install
-4. билдим фронтенд: yarn encore dev
+4. билдим фронтенд: 
+
+   ./node_modules/.bin/encore dev 
+   (https://symfony.com/doc/4.0/frontend/encore/simple-example.html)
+   
 4. vagrant ssh
 5. cd /vagrant
 6. php bin/console d:m:m
