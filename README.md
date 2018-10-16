@@ -34,7 +34,7 @@ https://yarnpkg.com/lang/en/docs/install/#windows-stable
 
 # Запуск проекта, если он был ранее установлен
 1. vagrant up
-2. ./node_modules/.bin/encore dev
+2. ./node_modules/.bin/encore dev (если bootstrap не появился, то выполнить еще раз)
 3. vagrant ssh
 4. cd /vagrant
 5. php bin/console d:m:m
