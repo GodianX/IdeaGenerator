@@ -22,11 +22,23 @@ https://yarnpkg.com/lang/en/docs/install/#windows-stable
 1. vagrant plugin install vagrant-hostmanager
 2. vagrant up
 3. composer install
-4. билдим фронтенд: yarn encore dev
+4. билдим фронтенд: 
+
+   ./node_modules/.bin/encore dev 
+   (https://symfony.com/doc/4.0/frontend/encore/simple-example.html)
+   
 4. vagrant ssh
 5. cd /vagrant
 6. php bin/console d:m:m
 4. В браузере открываем: http://dev.godeng/
+
+# Запуск проекта, если он был ранее установлен
+1. vagrant up
+2. ./node_modules/.bin/encore dev
+3. vagrant ssh
+4. cd /vagrant
+5. php bin/console d:m:m
+6. В браузере открываем: http://dev.godeng/
 
 # Фронтэнд
 1. все стили писать в 
