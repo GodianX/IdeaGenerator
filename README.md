@@ -32,6 +32,14 @@ https://yarnpkg.com/lang/en/docs/install/#windows-stable
 6. php bin/console d:m:m
 4. В браузере открываем: http://dev.godeng/
 
+# Запуск проекта, если он был ранее установлен
+1. vagrant up
+2. ./node_modules/.bin/encore dev
+3. vagrant ssh
+4. cd /vagrant
+5. php bin/console d:m:m
+6. В браузере открываем: http://dev.godeng/
+
 # Фронтэнд
 1. все стили писать в 
 
