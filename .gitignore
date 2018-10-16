@@ -55,7 +55,6 @@ godeng_2.box
 
 # logs
 var/log/*.log
-.idea/
 
 ###> symfony/webpack-encore-pack ###
 /node_modules/
