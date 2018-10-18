@@ -54,7 +54,7 @@ godeng_2.box
 .vagrant/
 
 # logs
-var/log/*.log
+var/log/
 .idea/
 
 ###> symfony/webpack-encore-pack ###
