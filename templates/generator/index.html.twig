@@ -3,11 +3,35 @@
 {% block title %}Генератор идей!{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
-<div class="example-wrapper">
-    <h1>Ваша идея <br>{{ idea }}! ✅</h1>
-</div>
+    <div class="trapezoidUp"></div>
+    <div class="content">
+        {#<div class="triangleUp"></div>#}
+        <div class = "dvline"></div>
+        <div class = "dvline2"></div>
+        <div class="container-fluid">
+            {#<div class="row">#}
+                {#<div class ="col-xl-3">#}
+                    {#<form action="{{path('generator')}}" method="get">#}
+                        {#<input class="btnIdea" type="submit">#}
+                    {#</form>#}
+                {#</div>#}
+                {#<div class ="col-xl-6 ">#}
+                    {#<h1>Нажмите на лампочку</h1>#}
+                {#</div>#}
+                {#<div class ="col-xl-3"></div>#}
+            {#</div>#}
+            <div class="row">
+                <div class ="col-xl-3"></div>
+                <div class ="col-xl-6 example-wrapper">
+                    <h2>Ваша идея <p>{{ idea }}! ✅</p></h2>
+                </div>
+                <div class ="col-xl-3"></div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="triangleDown"></div>
+        <div class="trapezoidDown"></div>
+    </div>
+    {#<div class = "quadrilateralDown"></div>#}
 {% endblock %}

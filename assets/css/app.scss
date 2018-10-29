@@ -6,6 +6,112 @@ $primary: darken(#428bca, 20%);
 // the ~ allows you to reference things in node_modules
 @import "~bootstrap/scss/bootstrap";
 
-body {
-    background-color: lightgray;
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  background-color: #ffffff;
+  background-size: 100% 3em;
+  background-image: linear-gradient(#e5ebeb 0.05em, transparent 0.05em);
+ // -pie-background: linear-gradient(90deg, transparent 79px, #abced4 79px, #abced4 81px, transparent 81px) 0 0 / 100% 1.2em,
+ // linear-gradient(#e5ebeb .05em, transparent .05em) 0 0 / 100% 1.2em #ffffff;
+}
+
+.dvline {
+  background: #c4ada7;
+  width: 1px;
+  height: 100%;
+  position: absolute;
+  right: 95%;
+  top: 0px;
+}
+
+.dvline2 {
+  background: #c4ada7;
+  width: 1px;
+  height: 100%;
+  position: absolute;
+  right: 94.5%;
+  top: 0px;
+}
+
+.quadrilateralUp {
+  width: 80px;
+  height: 28px;
+  background: #bdc6e3;
+  transform: matrix3d(5.42, 0, 0, -0.0096,
+          0, 1.1, 0, 0,
+          0, 0, 1, 0,
+          -12, -6, 0, 1);
+  transform-origin: -1px 0px 0px;
+  opacity: .5;
+}
+
+.quadrilateralDown {
+  width: 80px;
+  height: 28px;
+  background: #bdc6e3;
+  transform: matrix3d(97.007568, 31.22721, 0, 0.038559,
+          0, 4, 0, 0,
+          0, 0, 1, 0,
+          -5.6, 693, 0, 1);
+  transform-origin: 0px 0px 0px;
+  opacity: .5;
+}
+
+.triangleDown {
+  border: 0 solid #bdc6e3;
+  border-left-width: 1900px;
+  border-top-width: 70px;
+  border-top-color: transparent;
+  opacity: .5;
+}
+
+.trapezoidDown {
+  width: 100%;
+  height: 100px;
+  background: #bdc6e3;
+  opacity: .5;
+  border-top-color: transparent;
+}
+
+.triangleUp {
+  border: 0 solid #bdc6e3;
+  border-left: 1900px solid transparent;
+  border-top-width: 70px;
+  border-top-color: transparent;
+  opacity: .5;
+}
+.trapezoidUp {
+  width: 100%;
+  height: 20px;
+  background: #bdc6e3;
+  opacity: .5;
+  border-top-color: transparent;
+}
+
+.content {
+  min-height: calc(100vh - 170px)
+}
+
+.example-wrapper {
+  padding-top: 4.1%;
+  text-align: center;
+  margin: 0;
+  width: 95%;
+  font: 18px/1.5 sans-serif;
+}
+
+p {
+  margin: 0;
+}
+
+h1 {
+  margin: 0;
+}
+
+.btnIdea {
+  background-image: url(/assets/img/1.png);
 }
