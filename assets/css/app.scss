@@ -65,6 +65,7 @@ body {
   border-top-width: 10vh;
   border-top-color: transparent;
   opacity: .7;
+  z-index: 1;
 }
 
 .trapezoidDown {
@@ -73,6 +74,7 @@ body {
   background: #bdc6e3;
   opacity: .7;
   border-top-color: transparent;
+  z-index: 1;
 }
 
 .trapezoidDownGrey {
@@ -80,6 +82,7 @@ body {
   height: 4vh;
   background: #bbbec7;
   border-top-color: transparent;
+  z-index: 1;
 }
 
 .triangleUp {
@@ -89,6 +92,7 @@ body {
   border-right: 100vw solid #bdc6e3;
   border-bottom: 5vh solid transparent;
   opacity: .7;
+  z-index: 1;
 }
 .trapezoidUp {
   width: 100%;
@@ -96,6 +100,7 @@ body {
   background: #bdc6e3;
   opacity: .7;
   border-top-color: transparent;
+  z-index: 1;
 }
 
 .content {
@@ -148,5 +153,14 @@ h3 {
 h3 {
   margin: 0;
   font-size: 2.25rem;
+}
+
+.site_title {
+  position: absolute;
+  z-index: 2;
+}
+
+.site_title h3{
+  font-size: 3em;
 }
 
