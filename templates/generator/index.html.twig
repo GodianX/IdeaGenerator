@@ -12,19 +12,23 @@
             <div class="row">
                 <div class ="col-xl-3">
                     <form action="{{path('generator')}}" method="get">
-                        <input class="btnIdea" type="submit">
-                        <img src="{{ asset('build/img/1.png') }}">
+                        <input type="image" src="{{ asset('build/img/1.png') }}" alt="Submit" width="48" height="48">
                     </form>
                 </div>
                 <div class ="col-xl-6 ">
-                    <h1>Нажмите на лампочку</h1>
+                    <h3>Нажмите на лампочку</h3>
                 </div>
                 <div class ="col-xl-3"></div>
             </div>
             <div class="row">
                 <div class ="col-xl-3"></div>
                 <div class ="col-xl-6 example-wrapper">
-                    <h2>Ваша идея <p>{{ idea }}! ✅</p></h2>
+                    {% if idea is defined and idea is not null %}
+                    <h1>{{ idea }}!</h1>
+                    {% endif %}
+                    {% if idea is defined and idea is null %}
+                        <h1>Тут может быть ваша идея!</h1>
+                    {% endif %}
                 </div>
                 <div class ="col-xl-3"></div>
             </div>
