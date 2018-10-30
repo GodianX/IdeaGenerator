@@ -75,3 +75,12 @@ assets/js/greet.js
 1. PostgreSqlSchemaManager.php:309
 2. Заменяем тело функции:
 https://stackoverflow.com/questions/47397435/how-to-correctly-use-doctrine-migrations-with-postressql
+
+# Примечание
+1. Установка билда изображений:
+yarn add copy-webpack-plugin --dev
+
+2. Добавляем возможность использования ссылок на изображения в css
+yarn add url-loader --dev
+
+
