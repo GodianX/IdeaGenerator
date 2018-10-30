@@ -11,7 +11,7 @@ $primary: darken(#428bca, 20%);
   padding: 0;
 }
 
-html, body {
+body {
   background-color: #ffffff;
   background-size: 100% 3em;
   background-image: linear-gradient(#e5ebeb 0.05em, transparent 0.05em);
@@ -21,20 +21,18 @@ html, body {
 
 .dvline {
   background: #c4ada7;
-  width: 1px;
+  width: 2px;
   height: 100%;
   position: absolute;
   right: 95%;
-  top: 0px;
 }
 
 .dvline2 {
   background: #c4ada7;
-  width: 1px;
+  width: 2px;
   height: 100%;
   position: absolute;
   right: 94.5%;
-  top: 0px;
 }
 
 .quadrilateralUp {
@@ -63,41 +61,50 @@ html, body {
 
 .triangleDown {
   border: 0 solid #bdc6e3;
-  border-left-width: 1900px;
-  border-top-width: 70px;
+  border-left-width: 100vw;
+  border-top-width: 10vh;
   border-top-color: transparent;
-  opacity: .5;
+  opacity: .7;
 }
 
 .trapezoidDown {
   width: 100%;
-  height: 100px;
+  height: 6vh;
   background: #bdc6e3;
-  opacity: .5;
+  opacity: .7;
+  border-top-color: transparent;
+}
+
+.trapezoidDownGrey {
+  width: 100%;
+  height: 4vh;
+  background: #bbbec7;
   border-top-color: transparent;
 }
 
 .triangleUp {
-  border: 0 solid #bdc6e3;
-  border-left: 1900px solid transparent;
-  border-top-width: 70px;
-  border-top-color: transparent;
-  opacity: .5;
+  width: 0;
+  height: 0;
+  border-top: 0px solid transparent;
+  border-right: 100vw solid #bdc6e3;
+  border-bottom: 5vh solid transparent;
+  opacity: .7;
 }
 .trapezoidUp {
   width: 100%;
-  height: 20px;
+  height: 5vh;
   background: #bdc6e3;
-  opacity: .5;
+  opacity: .7;
   border-top-color: transparent;
 }
 
 .content {
-  min-height: calc(100vh - 170px)
+  height: 60vh;
+  min-height: calc(60vh - 100px)
 }
 
 .example-wrapper {
-  padding-top: 4.1%;
+  //padding-top: 4.5%;
   text-align: center;
   margin: 0;
   width: 95%;
@@ -112,7 +119,34 @@ h1 {
   margin: 0;
 }
 
-.btnIdea {
-  //background-image: url(img/1.png);
-  //background-image: {{ asset('img/1.png') }};
+footer {
+  height: 20vh;
 }
+
+html {
+  height: 100vh;
+}
+
+header {
+  height: 20vh;
+}
+
+h3 {
+  text-align: center;
+}
+
+.confImg {
+  text-align: center;
+}
+
+.confText {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h3 {
+  margin: 0;
+  font-size: 2.25rem;
+}
+
