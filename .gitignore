@@ -64,5 +64,3 @@ npm-debug.log
 yarn-error.log
 ###< symfony/webpack-encore-pack ###
 .idea
-
-node_modules
