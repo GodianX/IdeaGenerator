@@ -2,6 +2,7 @@
 <html>
     <head>
         <link rel="stylesheet" href="{{ asset('build/app.css') }}">
+        <link rel="stylesheet" href="{{ asset('build/build/component.css') }}">
         <meta charset="UTF-8">
         <title>{% block title %}Welcome!{% endblock %}</title>
         {% block stylesheets %}{% endblock %}
@@ -10,5 +11,10 @@
         {% block body %}{% endblock %}
         {% block javascripts %}{% endblock %}
         <script src="{{ asset('build/app.js') }}"></script>
+        <script src="{{ asset('build/build/classie.js') }}"></script>
+        <script src="{{ asset('build/build/css-filters-polyfill.js') }}"></script>
+        <script src="{{ asset('build/build/cssParser.js') }}"></script>
+        <script src="{{ asset('build/build/modalEffects.js') }}"></script>
+        {#<script src="{{ asset('build/build/modernizr.custom.js') }}"></script>#}
     </body>
 </html>
