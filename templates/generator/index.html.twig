@@ -6,20 +6,23 @@
     <div class="md-modal md-effect-18" id="modal-18">
         <div class="md-content">
             <div class="modal-header">
-                <button class="close" type="button" data-dismiss="modal">×</button>
+                {#<button class="close" type="button" data-dismiss="modal">×</button>#}
+                <button class="md-close" type="button" data-dismiss="modal">Закрыть</button>
             <h4 class="modal-title">Добавьте слова</h4>
-            </div>
-            <div class="modal-body">
-            <input type="text" name="" placeholder="Существительное" size="20">
             </div>
             <div class="form-add-idea">
                 {{ form_start(form) }}
-                {{ form_widget(form) }}
-                <input type="submit" name="submit" value="Сохранить идею">
-                {{ form_end(form) }}
+                <div class="modal-body">
+                    {{ form_widget(form.action, {'attr': {'placeholder': 'Глагол'}}) }}
+                    {{ form_widget(form.adjective, {'attr': {'placeholder': 'Прилагательное'}}) }}
+                    {{ form_widget(form.noun, {'attr': {'placeholder': 'Существительное'}}) }}
+                </div>
+
             </div>
+
             <div class="modal-footer"></div>
-            <button class="md-close" type="button" data-dismiss="modal">Закрыть</button>
+            <input type="submit" name="submit" value="Сохранить идею">
+            {{ form_end(form) }}
         </div>
     </div>
 
