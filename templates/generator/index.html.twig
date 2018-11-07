@@ -12,6 +12,12 @@
             <div class="modal-body">
             <input type="text" name="" placeholder="Существительное" size="20">
             </div>
+            <div class="form-add-idea">
+                {{ form_start(form) }}
+                {{ form_widget(form) }}
+                <input type="submit" name="submit" value="Сохранить идею">
+                {{ form_end(form) }}
+            </div>
             <div class="modal-footer"></div>
             <button class="md-close" type="button" data-dismiss="modal">Закрыть</button>
         </div>
@@ -46,6 +52,12 @@
                     <div class="col-xl-8"></div>
                     <div class="col-xl-4">
                         <h2 class="site_title_h">Генератор идей</h2>
+                        {% if idea is defined and idea is not null %}
+                            <h1>{{ idea }}!</h1>
+                        {% endif %}
+                        {% if idea is defined and idea is null %}
+                            <h1>Тут может быть ваша идея!</h1>
+                        {% endif %}
                     </div>
                 </div>
                 <div class="row">

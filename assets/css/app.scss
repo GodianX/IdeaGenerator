@@ -277,3 +277,15 @@ h2 {
     max-width: 100vw;
   }
 }
+
+.form-add-idea label {
+  display: none;
+}
+
+.form-add-idea input[type="text"] {
+   border-radius: 20px;
+ }
+
+.form-add-idea input[type="submit"] {
+  border-width: 20px;
+}
