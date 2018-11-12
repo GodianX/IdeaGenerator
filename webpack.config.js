@@ -22,14 +22,6 @@ Encore
     .addPlugin(new CopyWebpackPlugin([
         { from: './assets/img', to: 'img' }
     ]))
-
-    .addPlugin(new CopyWebpackPlugin([
-        { from: './assets/css', to: 'build' }
-    ]))
-
-    .addPlugin(new CopyWebpackPlugin([
-        { from: './assets/js', to: 'build' }
-    ]))
 ;
 
 module.exports = Encore.getWebpackConfig();
