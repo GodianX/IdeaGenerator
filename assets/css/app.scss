@@ -169,7 +169,8 @@ button {
 }
 
 button:hover {
-  background: #A5281B;
+  background: #a2ab5b;
+  color: white;
 }
 
 @media screen and (max-width: 46.0625em) {
@@ -242,7 +243,7 @@ button:hover {
   z-index: 1;
 }
 
-.dvline {
+.dv_line {
   background: #c4ada7;
   width: 2px;
   height: 100%;
@@ -250,7 +251,7 @@ button:hover {
   right: 95%;
 }
 
-.dvline2 {
+.dv_line2 {
   background: #c4ada7;
   width: 2px;
   height: 100%;
@@ -281,6 +282,10 @@ h3 {
   .container {
     max-width: 100vw;
   }
+}
+
+.form-add-idea {
+  padding-bottom: 0 !important;
 }
 
 .form-add-idea label {
@@ -320,11 +325,53 @@ h3 {
 }
 
 .modal-header {
-  padding-left: 0 !important;
-  padding-right: 0 !important;
+  padding: 0 !important;
   border: 0;
 }
 
 .modal-footer {
+  padding-top: 0 !important;
+  padding-bottom: 15px !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   border: 0;
+}
+
+p {
+  margin: 0;
+}
+
+dl {
+  margin: 0;
+}
+
+.md-close {
+  background: none;
+  border: none;
+  margin-right: 0 !important;
+}
+
+.modal-title {
+  margin-left: 65px;
+}
+
+.btn-cust {
+  border: none;
+  padding: 0.6em 1.2em;
+  background: #999aca;
+  color: #000213;
+  font-family: 'Lato', Calibri, Arial, sans-serif;
+  font-size: 1em;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: inline-block;
+  margin: 3px 2px;
+  border-radius: 20px;
+}
+
+.btn-cust:hover {
+  background: #a2ab5b;
+  color: white;
 }
