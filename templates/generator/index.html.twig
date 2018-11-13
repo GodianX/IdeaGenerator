@@ -3,61 +3,103 @@
 {% block title %}Генератор идей!{% endblock %}
 
 {% block body %}
-    <div class = "dvline"></div>
-    <div class = "dvline2"></div>
-    <header>
-        <div class="container-fluid site_title">
-            <div class="row">
-                <div class="col-xl-8"></div>
-                <div class="col-xl-4">
-                    <h2 class="site_title_h">Генератор идей</h2>
+    <div class="md-modal md-effect-18" id="modal-18">
+        <div class="md-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Добавьте слова</h4>
+                <button class="md-close" type="button" data-dismiss="modal">×</button>
+            </div>
+            <div class="form-add-idea">
+                {{ form_start(form) }}
+                <div class="modal-body">
+                    <dl>
+                        <dd>{{ form_widget(form.action, {'attr': {'placeholder': ' Глагол'}}) }}</dd>
+                        <dd>{{ form_widget(form.adjective, {'attr': {'placeholder': ' Прилагательное'}}) }}</dd>
+                        <dd>{{ form_widget(form.noun, {'attr': {'placeholder': ' Существительное'}}) }}</dd>
+                    </dl>
                 </div>
             </div>
-        </div>
-        <div class="trapezoidUp"></div>
-        <div class="triangleUp"></div>
-    </header>
-    <div class="content">
-        <div class="container-fluid">
-            <div class="row">
-                <div class ="col-xl-3"></div>
-                <div class ="col-xl-2 confImg">
-                    <form action="{{path('generator')}}" method="get">
-                        <input type="image" src="{{ asset('build/img/1.png') }}" alt="Submit" width="300vw" height="300vh">
-                    </form>
-                </div>
-                <div class ="col-xl-3 confText">
-                    <h3>Нажмите на лампочку</h3>
-                </div>
-                <div class ="col-xl-4"></div>
+            <div class="modal-footer">
+            <input class="btn-cust" type="submit" name="submit" value="Сохранить идею">
+
             </div>
-            <br>
-            <div class="row">
-                <div class ="col-xl-3"></div>
-                <div class ="col-xl-6 example-wrapper">
-                    {% if idea is defined and idea is not null %}
-                    <h1>{{ idea }}!</h1>
-                    {% endif %}
-                    {% if idea is defined and idea is null %}
-                        <h1>Тут может быть ваша идея!</h1>
-                    {% endif %}
-                </div>
-                <div class ="col-xl-3"></div>
-            </div>
+            {{ form_end(form) }}
         </div>
     </div>
-    <footer>
-        <div class="triangleDown"></div>
-        <div class="container site_title">
-            <div class="row">
-                <div class="col-xl-1"></div>
-                <div class="col-xl-7">
-                    <h4>Авторы: Кожин К.P., Быкова А.А., Тазетдинов А.А.</h4>
+
+    <div class="container">
+        <div class = "dv_line"></div>
+        <div class = "dv_line2"></div>
+        <div class="codrops-top clearfix">
+        </div>
+        <header>
+            <div class="container-fluid site_title">
+                <div class="row">
+                    <div class="col-xl-8"></div>
+                    <div class="col-xl-4">
+                        <h2 class="site_title_h">Генератор идей</h2>
+                    </div>
                 </div>
-                <div class="col-xl-4"></div>
+                <div class="row">
+                    <div class="col-xl-8"></div>
+                    <div class="col-xl-4">
+                        <button class="md-trigger md-setperspective" type="button" data-modal="modal-18">Добавить идею</button>
+                    </div>
+                </div>
+            </div>
+            <div class="trapezoidUp"></div>
+            <div class="triangleUp"></div>
+        </header>
+        <div class="main clearfix">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class ="col-xl-3"></div>
+                    <div class="col-xl-3 confImg">
+                        <form action="{{path('generator')}}" method="get">
+                            <input type="image" src="{{ asset('build/img/1.png') }}" alt="Submit" width="300vw" height="300vh">
+                        </form>
+                    </div>
+                    <div class ="col-xl-3 confText">
+                        <h3>Нажмите на лампочку</h3>
+                    </div>
+                    <div class ="col-xl-3"></div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-xl-12  example-wrapper">
+                        {% if idea is defined and idea is not null %}
+                            <h1>{{ idea }}!</h1>
+                        {% endif %}
+                        {% if idea is defined and idea is null %}
+                            <h1>Тут может быть ваша идея!</h1>
+                        {% endif %}
+                    </div>
+                </div>
             </div>
         </div>
+        <footer>
+        <div class="triangleDown"></div>
+            <div class="container-fluid site_title">
+                <div class="row">
+                    <div class="col-xl-1"></div>
+                    <div class="col-xl-7">
+                        <h4>Авторы: Кожин К.P., Быкова А.А., Тазетдинов А.А.</h4>
+                    </div>
+                    <div class="col-xl-4"></div>
+                </div>
+            </div>
         <div class="trapezoidDown"></div>
+            <div class="container-fluid site_title">
+                <div class="row">
+                    <div class="col-xl-10"></div>
+                    <div class="col-xl-2">
+                        <p>2018 год, группа Р4255</p>
+                    </div>
+                </div>
+            </div>
         <div class="trapezoidDownGrey"></div>
-    </footer>
+        </footer>
+    </div><!-- /container -->
+    <div class="md-overlay"></div><!-- the overlay element -->
 {% endblock %}
+
